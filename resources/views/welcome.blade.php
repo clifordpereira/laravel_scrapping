@@ -19,9 +19,13 @@
                         <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
                             <pre>
                                 After creating a database, set its details in .env file,
+                                
                                 RUN php artisan migrate # for creating new table for storing straped data
                                 RUN php artisan scrape:data # for scrapping the data through command
                                 And visit <a href="{{ url('/scraped-data') }}">Scraped Data</a>
+
+                                # If you want to empty the table,
+                                RUN php artisan scraped-data:truncate
                             </pre>
                         </div>
                     </main>
